@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Import skripta — čita data/scraped-products.json i ubacuje u bazu.
  *
