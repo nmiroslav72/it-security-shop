@@ -74,7 +74,7 @@ async function main() {
         data: {
           slug: p.slug,
           name: p.name,
-          shortDesc: p.shortDesc || null,
+          shortDesc: p.shortDesc || undefined,
           description: p.description || p.name,
           price: p.price || 0,
           showPrice: p.price > 0, // ako nemamo cenu, sakrij i prikaži "Cena na upit"
