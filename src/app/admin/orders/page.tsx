@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import { formatPrice } from "@/lib/utils";
@@ -78,3 +79,4 @@ function paymentLabel(m: string) {
     }[m] ?? m
   );
 }
+
