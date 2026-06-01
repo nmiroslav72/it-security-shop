@@ -5,7 +5,7 @@ import { ProductCard } from "./ProductCard";
 export async function Bestsellers() {
   const products = await prisma.product
     .findMany({
-      where: { isBestseller: true, isActive: true },
+      where: { isBestseller: true, active: true },
       take: 8,
       orderBy: { createdAt: "desc" },
     })
