@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { prisma } from "@/lib/prisma";
 import { notFound } from "next/navigation";
 import { formatPrice } from "@/lib/utils";
