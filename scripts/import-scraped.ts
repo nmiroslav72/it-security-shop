@@ -79,7 +79,7 @@ async function main() {
           price: p.price || 0,
           showPrice: p.price > 0, // ako nemamo cenu, sakrij i prikaži "Cena na upit"
           stock: 0,
-          category: p.ourCategory as Category,
+          category: { connect: { id: p.ourCategory.id } },
           brand: p.brand || "Nepoznat",
           images: p.images,
           attributes: p.attributes ?? {},
