@@ -32,6 +32,7 @@ export function AddToCartButton({ product }: { product: Product }) {
             name: product.name,
             price: product.price!,
             image: product.images?.[0] ?? "",
+            slug: product.slug || product.id,
             quantity: 1,
           })
         }
