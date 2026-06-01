@@ -1,0 +1,86 @@
+  // IMOU - boma.rs (samo na stanju)
+  // EUR × 118 × 1.2 × 1.48 = ×209.568
+  { wooId:21001, name:'Imou IPC-F88FIP-V2 IP WiFi 8MP IC kamera, Knight 4K, IC 30m + beli LED, 2.8mm, mikrofon, zvučnik, sirena, LE 600 lumena, microSD card slot, IP66', slug:'imou-ipc-f88fip-v2-ip-wifi-8mp-ic-kamera-knight-4k-ic-30m-beli-led-2-8mm-mikrofon-zvu-nik-sirena-le-600-lumena-microsd-card-slot-ip66',
+    description:'Imou IPC-F88FIP-V2 
+                                    IP WiFi 8MP IC kamera, Knight 4K, IC 30m + beli LED, 2.8mm, mikrofon, zvučnik, sirena, LE 600 lumena, microSD card slot, IP66',
+    brand:'Imou', price:24293.0, regularPrice:24293.0, salePrice:24293.0,
+    showPrice:true, inStock:true,
+    images:['https://boma.rs/images/UniVeiw_oprema_bg.png'], attributes:{"brand":"Imou","rezolucija":"8MPX"}, categorySlug:'ip-kamere' },
+  { wooId:21002, name:'Imou IPC-T22EP-C IP WiFi 2MP eyeball kamera; Imou; IC 30m, 2.8mm, mikrofon, plastika', slug:'imou-ipc-t22ep-c-ip-wifi-2mp-eyeball-kamera-imou-ic-30m-2-8mm-mikrofon-plastika',
+    description:'Imou IPC-T22EP-C 
+                                    IP WiFi 2MP eyeball kamera; Imou; IC 30m, 2.8mm, mikrofon, plastika',
+    brand:'Imou', price:6132.0, regularPrice:6132.0, salePrice:6132.0,
+    showPrice:true, inStock:true,
+    images:['https://boma.rs/images/UniVeiw_oprema_bg.png'], attributes:{"brand":"Imou","rezolucija":"2MPX"}, categorySlug:'ip-kamere' },
+  { wooId:21003, name:'Imou IPC-C22FP-C IP WiFi 2MP bullet kamera; Imou Versa; IC 20m, 2.8mm, mikrofon, zvučnik, plastika, IP65', slug:'imou-ipc-c22fp-c-ip-wifi-2mp-bullet-kamera-imou-versa-ic-20m-2-8mm-mikrofon-zvu-nik-plastika-ip65',
+    description:'Imou IPC-C22FP-C 
+                                    IP WiFi 2MP bullet kamera; Imou Versa; IC 20m, 2.8mm, mikrofon, zvučnik, plastika, IP65',
+    brand:'Imou', price:5784.0, regularPrice:5784.0, salePrice:5784.0,
+    showPrice:true, inStock:true,
+    images:['https://boma.rs/images/UniVeiw_oprema_bg.png'], attributes:{"brand":"Imou","rezolucija":"2MPX"}, categorySlug:'ip-kamere' },
+  { wooId:21004, name:'Imou IPC-K9DCP-3T0WE-V2 IP WiFi 3MP bullet kamera sa baterijskim napajanjem i solarnim panelom; Cell 3C AiO; IC 15m + PIR; 2.8mm; Baterija; Mikrofon; Zvučnik; Sirena; MicroSD card slot; IP66', slug:'imou-ipc-k9dcp-3t0we-v2-ip-wifi-3mp-bullet-kamera-sa-baterijskim-napajanjem-i-solarnim-panelom-cell-3c-aio-ic-15m-pir-2-8mm-baterija-mikrofon-zvu-nik-sirena-microsd-card-slot-ip66',
+    description:'Imou IPC-K9DCP-3T0WE-V2 
+                                    IP WiFi 3MP bullet kamera sa baterijskim napajanjem i solarnim panelom; Cell 3C AiO; IC 15m + PIR; 2.8mm; Baterija; Mikrofon; Zvučnik; Sirena; MicroSD card slot; IP66',
+    brand:'Imou', price:8676.0, regularPrice:8676.0, salePrice:8676.0,
+    showPrice:true, inStock:true,
+    images:['https://boma.rs/images/UniVeiw_oprema_bg.png'], attributes:{"brand":"Imou","rezolucija":"3MPX"}, categorySlug:'ip-kamere' },
+  { wooId:21005, name:'Imou IPC-K9DC-5M0WEH-V2 IP WiFi 5MP bullet kamera sa baterijskim napajanjem i solarnim panelom; Cell 3C AiO 5MP; IC 15m + PIR; 2.8mm; Baterija; Mikrofon; Zvučnik; Sirena; MicroSD card slot; IP66', slug:'imou-ipc-k9dc-5m0weh-v2-ip-wifi-5mp-bullet-kamera-sa-baterijskim-napajanjem-i-solarnim-panelom-cell-3c-aio-5mp-ic-15m-pir-2-8mm-baterija-mikrofon-zvu-nik-sirena-microsd-card-slot-ip66',
+    description:'Imou IPC-K9DC-5M0WEH-V2 
+                                    IP WiFi 5MP bullet kamera sa baterijskim napajanjem i solarnim panelom; Cell 3C AiO 5MP; IC 15m + PIR; 2.8mm; Baterija; Mikrofon; Zvučnik; Sirena; MicroSD card slot; IP66',
+    brand:'Imou', price:10411.0, regularPrice:10411.0, salePrice:10411.0,
+    showPrice:true, inStock:true,
+    images:['https://boma.rs/images/UniVeiw_oprema_bg.png'], attributes:{"brand":"Imou","rezolucija":"5MPX"}, categorySlug:'ip-kamere' },
+  { wooId:21006, name:'Imou IPC-K3DP-5H0WF-0280B IP WiFi 5MP Bullet kamera; Imou Bullet 2E; Full Color; IC 30m + beli led; 2.8mm; Mikrofon; MicroSD; Plastika; IP67', slug:'imou-ipc-k3dp-5h0wf-0280b-ip-wifi-5mp-bullet-kamera-imou-bullet-2e-full-color-ic-30m-beli-led-2-8mm-mikrofon-microsd-plastika-ip67',
+    description:'Imou IPC-K3DP-5H0WF-0280B 
+                                    IP WiFi 5MP Bullet kamera; Imou Bullet 2E; Full Color; IC 30m + beli led; 2.8mm; Mikrofon; MicroSD; Plastika; IP67',
+    brand:'Imou', price:5436.0, regularPrice:5436.0, salePrice:5436.0,
+    showPrice:true, inStock:true,
+    images:['https://boma.rs/images/UniVeiw_oprema_bg.png'], attributes:{"brand":"Imou","rezolucija":"5MPX"}, categorySlug:'ip-kamere' },
+  { wooId:21007, name:'Imou IPC-PS3EP-5M0-0280B AI IP 5MP Bullet kamera; PoE serija; Imou Sense; AOR; IC + Beli LED 30m; 2.8mm; Mikrofon; Zvučnik; Sirena; MicroSD; Plastično kućište; IP67; PoE', slug:'imou-ipc-ps3ep-5m0-0280b-ai-ip-5mp-bullet-kamera-poe-serija-imou-sense-aor-ic-beli-led-30m-2-8mm-mikrofon-zvu-nik-sirena-microsd-plasti-no-ku-i-te-ip67-poe',
+    description:'Imou IPC-PS3EP-5M0-0280B 
+                                    AI IP 5MP Bullet kamera; PoE serija; Imou Sense; AOR; IC + Beli LED 30m; 2.8mm; Mikrofon; Zvučnik; Sirena; MicroSD; Plastično kućište; IP67; PoE',
+    brand:'Imou', price:5321.0, regularPrice:5321.0, salePrice:5321.0,
+    showPrice:true, inStock:true,
+    images:['https://boma.rs/images/UniVeiw_oprema_bg.png'], attributes:{"brand":"Imou","rezolucija":"5MPX"}, categorySlug:'ip-kamere' },
+  { wooId:21008, name:'Imou IPC-C32EP IP WiFi 3MP IC kamera, Cue 2 3MP', slug:'imou-ipc-c32ep-ip-wifi-3mp-ic-kamera-cue-2-3mp',
+    description:'Imou IPC-C32EP 
+                                    IP WiFi 3MP IC kamera, Cue 2 3MP',
+    brand:'Imou', price:3701.0, regularPrice:3701.0, salePrice:3701.0,
+    showPrice:true, inStock:true,
+    images:['https://boma.rs/images/UniVeiw_oprema_bg.png'], attributes:{"brand":"Imou","rezolucija":"3MPX"}, categorySlug:'ip-kamere' },
+  { wooId:21009, name:'Imou IPC-PS8D-5V0-0280B 5MP Eyeball kamera; PoE serija; ImouSense; AOR; IC 30 m + Beli LED 30m; Aktivno odvraćanje; 2.8mm; Mikrofon; MicroSD card slot; Metal+Plastika; IP67; PoE', slug:'imou-ipc-ps8d-5v0-0280b-5mp-eyeball-kamera-poe-serija-imousense-aor-ic-30-m-beli-led-30m-aktivno-odvra-anje-2-8mm-mikrofon-microsd-card-slot-metal-plastika-ip67-poe',
+    description:'Imou IPC-PS8D-5V0-0280B 
+                                    5MP Eyeball kamera; PoE serija; ImouSense; AOR; IC 30 m + Beli LED 30m; Aktivno odvraćanje; 2.8mm; Mikrofon; MicroSD card slot; Metal+Plastika; IP67; PoE',
+    brand:'Imou', price:5321.0, regularPrice:5321.0, salePrice:5321.0,
+    showPrice:true, inStock:true,
+    images:['https://boma.rs/images/UniVeiw_oprema_bg.png'], attributes:{"brand":"Imou","rezolucija":"5MPX"}, categorySlug:'ip-kamere' },
+  { wooId:21010, name:'Imou IPC-PS3EP-8Q0-0280B AI IP 8MP Bullet kamera; PoE serija; Algo Play analitika; AOR; Algo Play; IC + Beli LED 30m; 2.8mm; Mikrofon; Zvučnik; Sirena; MicroSD; Kućište metal+plastika; IP67; PoE', slug:'imou-ipc-ps3ep-8q0-0280b-ai-ip-8mp-bullet-kamera-poe-serija-algo-play-analitika-aor-algo-play-ic-beli-led-30m-2-8mm-mikrofon-zvu-nik-sirena-microsd-ku-i-te-metal-plastika-ip67-poe',
+    description:'Imou IPC-PS3EP-8Q0-0280B 
+                                    AI IP 8MP Bullet kamera; PoE serija; Algo Play analitika; AOR; Algo Play; IC + Beli LED 30m; 2.8mm; Mikrofon; Zvučnik; Sirena; MicroSD; Kućište metal+plastika; IP67; PoE',
+    brand:'Imou', price:6593.0, regularPrice:6593.0, salePrice:6593.0,
+    showPrice:true, inStock:true,
+    images:['https://boma.rs/images/UniVeiw_oprema_bg.png'], attributes:{"brand":"Imou","rezolucija":"8MPX"}, categorySlug:'ip-kamere' },
+  { wooId:21011, name:'Imou NVR-N118W-8A0E-P 18-kanalni WiFi NVR, do 16TB; Mikrofon; Zvučnik; HDMI; VGA; Imou', slug:'imou-nvr-n118w-8a0e-p-18-kanalni-wifi-nvr-do-16tb-mikrofon-zvu-nik-hdmi-vga-imou',
+    description:'Imou NVR-N118W-8A0E-P 
+                                    18-kanalni WiFi NVR, do 16TB; Mikrofon; Zvučnik; HDMI; VGA; Imou',
+    brand:'Imou', price:16195.0, regularPrice:16195.0, salePrice:16195.0,
+    showPrice:true, inStock:true,
+    images:['https://boma.rs/images/UniVeiw_oprema_bg.png'], attributes:{"brand":"Imou"}, categorySlug:'nvr-mrezni-snimaci' },
+  { wooId:21012, name:'Imou NVR-N110W-8A0E-P 10-kanalni WiFi NVR, do 16TB; Mikrofon; Zvučnik; HDMI; VGA; Imou', slug:'imou-nvr-n110w-8a0e-p-10-kanalni-wifi-nvr-do-16tb-mikrofon-zvu-nik-hdmi-vga-imou',
+    description:'Imou NVR-N110W-8A0E-P 
+                                    10-kanalni WiFi NVR, do 16TB; Mikrofon; Zvučnik; HDMI; VGA; Imou',
+    brand:'Imou', price:13303.0, regularPrice:13303.0, salePrice:13303.0,
+    showPrice:true, inStock:true,
+    images:['https://boma.rs/images/UniVeiw_oprema_bg.png'], attributes:{"brand":"Imou"}, categorySlug:'nvr-mrezni-snimaci' },
+  { wooId:21013, name:'Imou NVR-N110-8A0E-P 10-kanalni NVR, do 16TB; Mikrofon; Zvučnik; HDMI; VGA; Imou', slug:'imou-nvr-n110-8a0e-p-10-kanalni-nvr-do-16tb-mikrofon-zvu-nik-hdmi-vga-imou',
+    description:'Imou NVR-N110-8A0E-P 
+                                    10-kanalni NVR, do 16TB; Mikrofon; Zvučnik; HDMI; VGA; Imou',
+    brand:'Imou', price:8676.0, regularPrice:8676.0, salePrice:8676.0,
+    showPrice:true, inStock:true,
+    images:['https://boma.rs/images/UniVeiw_oprema_bg.png'], attributes:{"brand":"Imou"}, categorySlug:'nvr-mrezni-snimaci' },
+  { wooId:21014, name:'Imou NVR-N118-8A0E-P 18-kanalni NVR, do 16TB; Mikrofon; Zvučnik; HDMI; VGA; Imou', slug:'imou-nvr-n118-8a0e-p-18-kanalni-nvr-do-16tb-mikrofon-zvu-nik-hdmi-vga-imou',
+    description:'Imou NVR-N118-8A0E-P 
+                                    18-kanalni NVR, do 16TB; Mikrofon; Zvučnik; HDMI; VGA; Imou',
+    brand:'Imou', price:10411.0, regularPrice:10411.0, salePrice:10411.0,
+    showPrice:true, inStock:true,
+    images:['https://boma.rs/images/UniVeiw_oprema_bg.png'], attributes:{"brand":"Imou"}, categorySlug:'nvr-mrezni-snimaci' },

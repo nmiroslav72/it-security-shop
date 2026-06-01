@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)",
+      "PowerShell(Get-Command node -ErrorAction SilentlyContinue; Get-ChildItem \"C:\\\\Program Files\\\\nodejs\", \"C:\\\\Program Files \\(x86\\)\\\\nodejs\", \"$env:LOCALAPPDATA\\\\Programs\\\\nodejs\", \"$env:APPDATA\\\\nvm\", \"$env:ProgramData\\\\nvm\" -ErrorAction SilentlyContinue | Select-Object FullName)",
+      "WebFetch(domain:diskontvideonadzora.rs)"
+    ]
+  }
+}

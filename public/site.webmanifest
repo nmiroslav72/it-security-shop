@@ -1,0 +1,13 @@
+{
+  "name": "IT SECURITY",
+  "short_name": "IT SECURITY",
+  "description": "Video nadzor, alarmi i interfoni — Beograd, Srbija",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1d3eb8",
+  "lang": "sr-RS",
+  "icons": [
+    { "src": "/logo.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

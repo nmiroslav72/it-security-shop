@@ -1,0 +1,152 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─── KATEGORIJE (stablo: parent → children) ───────────────────────────────
+model Category {
+  id       String  @id @default(cuid())
+  name     String
+  slug     String  @unique
+  parentId String?
+
+  parent   Category?  @relation("CategoryTree", fields: [parentId], references: [id])
+  children Category[] @relation("CategoryTree")
+  products Product[]
+
+  createdAt DateTime @default(now())
+}
+
+// ─── PROIZVODI ─────────────────────────────────────────────────────────────
+model Product {
+  id          String  @id @default(cuid())
+  name        String
+  slug        String  @unique
+  description String  @default("")
+  shortDesc   String  @default("")
+  sku         String? @unique
+  brand       String?
+
+  price         Float?
+  regularPrice  Float?   // originalna cena pre popusta
+  salePrice     Float?   // cena na akciji (ako postoji)
+  showPrice     Boolean  @default(true)
+
+  stock         Int      @default(0)
+  inStock       Boolean  @default(true)
+
+  isBestseller  Boolean  @default(false)
+  isFeatured    Boolean  @default(false)
+  active        Boolean  @default(true)
+
+  images        String[] // array URL-ova
+  attributes    Json     @default("{}") // { "resolution": "4mpx", "type": "IP", ... }
+
+  categoryId    String?
+  category      Category? @relation(fields: [categoryId], references: [id])
+
+  orderItems    OrderItem[]
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  // WooCommerce originalni ID (za migraciju)
+  wooId         Int?     @unique
+}
+
+// ─── KORISNICI ─────────────────────────────────────────────────────────────
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  password  String
+  role      Role     @default(CUSTOMER)
+  orders    Order[]
+  createdAt DateTime @default(now())
+}
+
+enum Role {
+  ADMIN
+  CUSTOMER
+  USER
+}
+
+// ─── PORUDŽBINE ────────────────────────────────────────────────────────────
+model Order {
+  id        String      @id @default(cuid())
+  userId    String?
+  user      User?       @relation(fields: [userId], references: [id])
+
+  // Podaci kupca (gost ili registrovan)
+  firstName   String
+  lastName    String
+  email       String
+  phone       String
+  address     String
+  city        String
+  postalCode  String
+
+  items       OrderItem[]
+  total       Float
+  status      OrderStatus @default(PENDING)
+  paymentMethod PaymentMethod @default(COD)
+  note        String?
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+enum OrderStatus {
+  PENDING
+  CONFIRMED
+  PROCESSING
+  SHIPPED
+  DELIVERED
+  CANCELLED
+}
+
+enum PaymentMethod {
+  COD         // pouzeće
+  BANK        // uplata na račun
+  CARD        // kartica (Monri/NestPay)
+}
+
+model OrderItem {
+  id        String  @id @default(cuid())
+  orderId   String
+  order     Order   @relation(fields: [orderId], references: [id])
+  productId String
+  product   Product @relation(fields: [productId], references: [id])
+  quantity  Int
+  price     Float   // cena u trenutku kupovine
+}
+
+// ─── KONTAKT PORUKE ────────────────────────────────────────────────────────
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+// ─── PROMO BANERI (admin ih menja) ─────────────────────────────────────────
+model PromoBanner {
+  id       String  @id @default(cuid())
+  title    String
+  subtitle String
+  badge    String
+  href     String
+  bgColor  String  @default("#1d3eb8")
+  txtColor String  @default("#ffffff")
+  active   Boolean @default(true)
+  order    Int     @default(0)
+}
