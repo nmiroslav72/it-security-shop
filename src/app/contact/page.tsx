@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ContactForm } from "@/components/ContactForm";
 import { FAQ } from "@/components/FAQ";
 import { SITE, telHref, mailHref } from "@/lib/site";

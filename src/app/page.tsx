@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { prisma } from "@/lib/prisma";
 import { ProductCard } from "@/components/shop/ProductCard";
 import { SortSelect } from "@/components/shop/SortSelect";

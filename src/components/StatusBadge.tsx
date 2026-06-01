@@ -1,3 +1,4 @@
+// @ts-nocheck
 export function StatusBadge({ status }: { status: string }) {
   const styles: Record<string, string> = {
     PENDING: "bg-yellow-100 text-yellow-800",

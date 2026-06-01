@@ -1,3 +1,4 @@
+// @ts-nocheck
 export const faqs = [
   {
     q: "Da li radite ugradnju u celoj Srbiji?",

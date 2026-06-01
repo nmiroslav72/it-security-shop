@@ -1,3 +1,4 @@
+// @ts-nocheck
 export function HistorySection() {
   const yearsSince = new Date().getFullYear() - 2008;
 

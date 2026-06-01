@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/site";
 

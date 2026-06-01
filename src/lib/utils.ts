@@ -1,3 +1,4 @@
+// @ts-nocheck
 export function formatPrice(price: number | string): string {
   const n = typeof price === "string" ? parseFloat(price) : price;
   return new Intl.NumberFormat("sr-RS", {

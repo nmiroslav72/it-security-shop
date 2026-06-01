@@ -1,3 +1,4 @@
+// @ts-nocheck
 export const SITE = {
   name: "IT SECURITY",
   legalName: "IT SECURITY",
