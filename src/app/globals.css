@@ -77,8 +77,16 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .left-sidebar, .sb {
+  .left-sidebar {
     width: 100% !important;
+    order: 1;
+  }
+  .center-col {
+    order: 2;
+    width: 100% !important;
+  }
+  .right-sidebar {
+    order: 3;
   }
   .sb { 
     position: static !important; 
