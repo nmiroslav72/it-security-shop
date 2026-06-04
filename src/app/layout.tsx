@@ -31,7 +31,7 @@ export default function RootLayout({
           <InfoBar />
           <PromoBar />
           <div className="body-row">
-            <Suspense fallback={<div style={{width:220}}></div>}><Suspense fallback={<div style={{width:220}}></div>}><LeftSidebar /></Suspense></Suspense>
+            <Suspense fallback={<div style={{width:220}}></div>}><LeftSidebar /></Suspense>
             <main className="center-col">{children}</main>
             <RightSidebar />
           </div>
