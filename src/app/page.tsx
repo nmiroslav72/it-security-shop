@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 // @ts-nocheck
 import { prisma } from "@/lib/prisma";
 import { ProductCard } from "@/components/shop/ProductCard";
