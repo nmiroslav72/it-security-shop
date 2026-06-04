@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 // @ts-nocheck
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
