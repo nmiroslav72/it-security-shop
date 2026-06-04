@@ -73,14 +73,12 @@ body {
 }
 
 @media (max-width: 768px) {
-  :root {
-    --left-width: 0px;
-  }
   .body-row {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
-  .left-sidebar {
-    display: none;
+  .left-sidebar, .sb {
+    width: 100% !important;
   }
   .sb { 
     position: static !important; 
