@@ -6,7 +6,6 @@ import { Header }      from "@/components/layout/Header";
 import { InfoBar }     from "@/components/layout/InfoBar";
 import { PromoBar }    from "@/components/layout/PromoBar";
 import { Suspense } from "react";
-import { Suspense } from "react";
 import { LeftSidebar } from "@/components/layout/LeftSidebar";
 import { RightSidebar } from "@/components/layout/RightSidebar";
 import { Footer }      from "@/components/layout/Footer";
