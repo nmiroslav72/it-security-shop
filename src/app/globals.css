@@ -144,3 +144,4 @@ button {
   .center-col { width: 100% !important; order: 2; min-width: 0; }
   .right-sidebar { display: none !important; }
 }
+@media only screen and (max-width: 768px) { div.body-row { display: flex !important; flex-direction: column !important; flex-wrap: nowrap !important; } div.body-row > aside { width: 100% !important; min-width: 100% !important; } div.body-row > main { width: 100% !important; min-width: 100% !important; order: 2; } }
