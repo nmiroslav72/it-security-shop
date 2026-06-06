@@ -78,9 +78,6 @@ body {
     flex-direction: column !important;
     grid-template-columns: unset !important;
   }
-  .left-sidebar {
-    display: none;
-  }
   .sb { 
     position: static !important; 
     height: auto !important; 
