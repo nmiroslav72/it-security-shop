@@ -140,3 +140,6 @@ button {
   .promo-banner__subtitle { font-size: 10px !important; }
   .promo-banner__badge { font-size: 10px !important; padding: 2px 6px !important; }
 }
+
+.pc { position: relative; z-index: 1; }
+@media (max-width: 768px) { .sb { z-index: 0 !important; position: relative !important; height: auto !important; overflow: visible !important; } }
