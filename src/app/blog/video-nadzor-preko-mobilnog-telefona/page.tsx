@@ -70,6 +70,19 @@ export default function BlogPost() {
 
       </div>
 
+      
+      <div className="blog-video">
+        <h2>Video: Kako podesiti video nadzor na mobilnom telefonu</h2>
+        <div className="blog-video__wrap">
+          <iframe
+            src="https://www.youtube.com/embed/Pm0dwGIg8S0"
+            title="Video nadzor preko mobilnog telefona"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      </div>
       <div className="blog-post__cta">
         <h3>Trebate video nadzor ili alarmni sistem?</h3>
         <p>IT Security — prodaja i ugradnja u Beogradu. Licencirani tehnicari, garancija 3 godine.</p>
@@ -96,6 +109,10 @@ export default function BlogPost() {
         .blog-post__cta h3 { font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 8px; }
         .blog-post__cta p { font-size: 13px; color: rgba(255,255,255,0.8); margin-bottom: 16px; }
         .blog-post__btn { display: inline-block; background: #f6d000; color: #0b1020; font-size: 14px; font-weight: 700; padding: 10px 24px; border-radius: 8px; text-decoration: none; margin: 0 6px; }
+        .blog-video { margin: 32px 0; }
+        .blog-video h2 { font-size: 18px; font-weight: 700; color: var(--ink); margin-bottom: 12px; }
+        .blog-video__wrap { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; }
+        .blog-video__wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
         .blog-post__btn--outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.4); }
         @media (max-width: 640px) { .blog-post__h1 { font-size: 20px; } }
       `}</style>
