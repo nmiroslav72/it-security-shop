@@ -7,6 +7,7 @@ import { InfoBar }     from "@/components/layout/InfoBar";
 import { PromoBar }    from "@/components/layout/PromoBar";
 import { Suspense } from "react";
 import { LeftSidebar } from "@/components/layout/LeftSidebar";
+import { FloatingButtons } from "@/components/layout/FloatingButtons";
 import { RightSidebar } from "@/components/layout/RightSidebar";
 import { Footer }      from "@/components/layout/Footer";
 
@@ -35,6 +36,7 @@ export default function RootLayout({
             <main className="center-col">{children}</main>
             <RightSidebar />
           </div>
+          <FloatingButtons />
           <Footer />
         </div>
       </body>
