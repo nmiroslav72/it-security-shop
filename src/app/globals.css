@@ -143,3 +143,5 @@ button {
 
 .pc { position: relative; z-index: 1; }
 @media (max-width: 768px) { .sb { z-index: 0 !important; position: relative !important; height: auto !important; overflow: visible !important; } }
+
+@media (max-width: 768px) { .center-col { background: var(--surface-alt) !important; position: relative; z-index: 2; } .shop-page__grid { background: var(--surface-alt); } }
