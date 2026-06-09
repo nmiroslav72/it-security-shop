@@ -1,155 +1,110 @@
-// @ts-nocheck
-import { ContactForm } from "@/components/ContactForm";
-import { FAQ } from "@/components/FAQ";
-import { SITE, telHref, mailHref } from "@/lib/site";
-import { faqs } from "@/lib/faqs";
 import type { Metadata } from "next";
-import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Kontakt — pošalji upit ili pozovi",
-  description: `Kontakt podaci za ${SITE.name} — telefon ${SITE.phoneDisplay}, email ${SITE.email}, adresa ${SITE.address.street}, ${SITE.address.city}. Brza ponuda i besplatna procena.`,
-  alternates: { canonical: "/contact" },
-};
-
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map((f) => ({
-    "@type": "Question",
-    name: f.q,
-    acceptedAnswer: { "@type": "Answer", text: f.a },
-  })),
+  title: "Kontakt — IT Security video nadzor Beograd",
+  description: "Kontaktirajte IT Security za video nadzor, alarmne sisteme i interfone u Beogradu. Adresa: Sutjeska 7, lok. 50c, Palilula, Beograd. Tel: 063224651.",
 };
 
 export default function ContactPage() {
   return (
-    <div className="bg-slate-50">
-      <Script
-        id="ld-faq"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
-      {/* Header */}
-      <section className="bg-gradient-to-br from-brand via-brand-dark to-ink py-12 text-white sm:py-16">
-        <div className="container-app">
-          <p className="mb-3 text-xs font-bold uppercase tracking-wider text-accent sm:text-sm">
-            Kontakt
-          </p>
-          <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-            Tu smo za sva pitanja
-          </h1>
-          <p className="mt-4 max-w-2xl text-base text-white/80 sm:text-lg">
-            Pozovi nas, piši nam ili svrati u našu kancelariju. Odgovaramo brzo —
-            obično u istom danu.
-          </p>
-        </div>
-      </section>
+    <div className="contact-page">
+      <h1 className="contact-h1">Kontakt — IT Security Beograd</h1>
 
-      <div className="container-app -mt-8 grid gap-4 pb-10 sm:-mt-10 sm:grid-cols-3 sm:gap-6">
-        <InfoCard
-          title="Pozovi"
-          value={SITE.phoneDisplay}
-          href={telHref}
-          icon={
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" strokeLinejoin="round" />
-            </svg>
-          }
-        />
-        <InfoCard
-          title="Email"
-          value={SITE.email}
-          href={mailHref}
-          icon={
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <rect x="3" y="5" width="18" height="14" rx="2" />
-              <path d="M3 7l9 6 9-6" />
-            </svg>
-          }
-        />
-        <InfoCard
-          title="Adresa"
-          value={`${SITE.address.street}, ${SITE.address.city}`}
-          href="#mapa"
-          icon={
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M12 22s7-7 7-12a7 7 0 10-14 0c0 5 7 12 7 12z" strokeLinejoin="round" />
-              <circle cx="12" cy="10" r="2.5" />
-            </svg>
-          }
-        />
+      <div className="contact-grid">
+        <div className="contact-info">
+          <div className="contact-card">
+            <span className="contact-card__icon">📍</span>
+            <div>
+              <h2 className="contact-card__title">Adresa</h2>
+              <p>Sutjeska 7, lokal 50c</p>
+              <p>Palilula, Beograd</p>
+            </div>
+          </div>
+
+          <div className="contact-card">
+            <span className="contact-card__icon">📞</span>
+            <div>
+              <h2 className="contact-card__title">Telefon</h2>
+              <a href="tel:063224651" className="contact-link">063224651</a>
+              <p className="contact-hours">Pon-Ned: 09:00 - 21:00</p>
+            </div>
+          </div>
+
+          <div className="contact-card">
+            <span className="contact-card__icon">✉️</span>
+            <div>
+              <h2 className="contact-card__title">Email</h2>
+              <a href="mailto:nmiroslav72@yahoo.com" className="contact-link">nmiroslav72@yahoo.com</a>
+            </div>
+          </div>
+
+          <div className="contact-card">
+            <span className="contact-card__icon">🕐</span>
+            <div>
+              <h2 className="contact-card__title">Radno vreme</h2>
+              <p>Ponedeljak - Petak: 09:00 - 21:00</p>
+              <p>Subota - Nedelja: 10:00 - 18:00</p>
+            </div>
+          </div>
+
+          <div className="contact-card">
+            <span className="contact-card__icon">🚗</span>
+            <div>
+              <h2 className="contact-card__title">Dolazak</h2>
+              <p>Parking ispred objekta. Javni prevoz: autobus 26, 27, 37.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.5!2d20.4789!3d44.8178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aa5b0000001%3A0x1!2sSutjeska+7%2C+Beograd!5e0!3m2!1ssr!2srs!4v1"
+            width="100%"
+            height="400"
+            style={{ border: 0, borderRadius: "12px" }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="IT Security lokacija - Sutjeska 7, Palilula, Beograd"
+          />
+          <a
+            href="https://www.google.com/maps/search/Sutjeska+7+Palilula+Beograd"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-directions"
+          >
+            📍 Otvori u Google Maps →
+          </a>
+        </div>
       </div>
 
-      {/* FAQ + form */}
-      <section className="section pt-0">
-        <div className="container-app grid gap-10 lg:grid-cols-[1fr,1fr]">
-          <div>
-            <h2 className="section-title">Najčešća pitanja</h2>
-            <p className="section-subtitle">
-              Brzi odgovori na najčešća pitanja kupaca.
-            </p>
-            <div className="mt-6">
-              <FAQ />
-            </div>
-          </div>
+      <div className="contact-cta">
+        <h2>Besplatna procena i ponuda</h2>
+        <p>Pozovite nas za besplatnu procenu i ponudu za video nadzor, alarmni sistem ili interfon. Dolazimo na teren u Beogradu i okolini.</p>
+        <a href="tel:063224651" className="contact-cta__btn">📞 Pozovite 063224651</a>
+      </div>
 
-          <div>
-            <h2 className="section-title">Pošalji poruku</h2>
-            <p className="section-subtitle">Ostavi pitanje — odgovaramo brzo.</p>
-            <div className="mt-6 card p-6 sm:p-8">
-              <ContactForm />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Mapa */}
-      <section id="mapa" className="pb-16">
-        <div className="container-app">
-          <h2 className="section-title mb-6">Lokacija</h2>
-          <div className="overflow-hidden rounded-3xl shadow-card">
-            <iframe
-              src="https://www.google.com/maps?q=Nova%2018%20109%2C%20Beograd&output=embed"
-              width="100%"
-              height="450"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Lokacija IT Security"
-              className="block"
-            />
-          </div>
-        </div>
-      </section>
+      <style>{`
+        .contact-page { max-width: 1000px; margin: 0 auto; padding: 0 8px; }
+        .contact-h1 { font-size: 26px; font-weight: 700; color: var(--ink); margin-bottom: 28px; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 40px; }
+        .contact-info { display: flex; flex-direction: column; gap: 14px; }
+        .contact-card { display: flex; gap: 14px; background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 12px; padding: 16px; }
+        .contact-card__icon { font-size: 28px; flex-shrink: 0; }
+        .contact-card__title { font-size: 13px; font-weight: 700; color: var(--ink); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+        .contact-card p { font-size: 14px; color: var(--ink-muted); line-height: 1.6; margin: 0; }
+        .contact-link { font-size: 16px; font-weight: 700; color: var(--brand); text-decoration: none; display: block; }
+        .contact-link:hover { text-decoration: underline; }
+        .contact-hours { font-size: 12px; color: var(--ink-muted); margin-top: 2px; }
+        .contact-map { display: flex; flex-direction: column; gap: 12px; }
+        .contact-directions { display: inline-block; background: var(--brand); color: #fff; font-size: 14px; font-weight: 600; padding: 10px 20px; border-radius: 8px; text-decoration: none; text-align: center; }
+        .contact-directions:hover { opacity: 0.9; }
+        .contact-cta { background: linear-gradient(135deg, #1d3eb8 0%, #152a85 100%); border-radius: 14px; padding: 32px; text-align: center; margin-bottom: 32px; }
+        .contact-cta h2 { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+        .contact-cta p { font-size: 14px; color: rgba(255,255,255,0.8); margin-bottom: 20px; max-width: 500px; margin-left: auto; margin-right: auto; }
+        .contact-cta__btn { display: inline-block; background: #f6d000; color: #0b1020; font-size: 16px; font-weight: 700; padding: 14px 32px; border-radius: 8px; text-decoration: none; }
+        @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } .contact-h1 { font-size: 20px; } }
+      `}</style>
     </div>
-  );
-}
-
-function InfoCard({
-  title,
-  value,
-  href,
-  icon,
-}: {
-  title: string;
-  value: string;
-  href: string;
-  icon: React.ReactNode;
-}) {
-  return (
-    <a
-      href={href}
-      className="card flex items-center gap-4 p-5 transition hover:-translate-y-0.5 hover:shadow-card"
-    >
-      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand">
-        {icon}
-      </div>
-      <div>
-        <p className="text-xs font-bold uppercase tracking-wide text-ink-muted">
-          {title}
-        </p>
-        <p className="font-semibold text-ink">{value}</p>
-      </div>
-    </a>
   );
 }
