@@ -11,7 +11,7 @@ const NAV_LINKS = [
   { href: "/contact", label: "Kontakt"    },
   { href: "/about",   label: "O nama"     },
   { href: "/blog",    label: "Blog"       },
-  { href: "/gallery", label: "Galerija"   },
+  
 ];
 
 export function Header() {

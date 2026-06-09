@@ -42,8 +42,10 @@ export default function ContactPage() {
             <span className="contact-card__icon">🕐</span>
             <div>
               <h2 className="contact-card__title">Radno vreme</h2>
-              <p>Ponedeljak - Petak: 09:00 - 21:00</p>
-              <p>Subota - Nedelja: 10:00 - 18:00</p>
+              <p>Ponedeljak - Petak: 10:00 - 16:00</p>
+              <p>Subota: 10:00 - 14:00</p>
+              <p>Nedelja: <strong>Neradimo</strong></p>
+              <p className="contact-warning">⚠️ Molimo vas da pre dolaska pozovete jer smo cesto na terenu.</p>
             </div>
           </div>
 
@@ -102,6 +104,7 @@ export default function ContactPage() {
         .contact-cta { background: linear-gradient(135deg, #1d3eb8 0%, #152a85 100%); border-radius: 14px; padding: 32px; text-align: center; margin-bottom: 32px; }
         .contact-cta h2 { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 8px; }
         .contact-cta p { font-size: 14px; color: rgba(255,255,255,0.8); margin-bottom: 20px; max-width: 500px; margin-left: auto; margin-right: auto; }
+        .contact-warning { font-size: 12px; color: #b45309; background: #fff8e1; border-radius: 6px; padding: 6px 10px; margin-top: 6px; }
         .contact-cta__btn { display: inline-block; background: #f6d000; color: #0b1020; font-size: 16px; font-weight: 700; padding: 14px 32px; border-radius: 8px; text-decoration: none; }
         @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } .contact-h1 { font-size: 20px; } }
       `}</style>
