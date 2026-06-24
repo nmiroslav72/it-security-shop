@@ -21,7 +21,7 @@ type Initial = {
   isFeatured?: boolean;
   isMonthlyOffer?: boolean;
   badge?: string | null;
-  isActive?: boolean;
+  active?: boolean;
 };
 
 export function ProductForm({ initial }: { initial?: Initial }) {
@@ -32,7 +32,7 @@ export function ProductForm({ initial }: { initial?: Initial }) {
   const [isBestseller, setIsBestseller] = useState(initial?.isBestseller ?? false);
   const [isFeatured, setIsFeatured] = useState(initial?.isFeatured ?? false);
   const [isMonthlyOffer, setIsMonthlyOffer] = useState(initial?.isMonthlyOffer ?? false);
-  const [isActive, setIsActive] = useState(initial?.isActive ?? true);
+  const [active, setIsActive] = useState(initial?.active ?? true);
   const [imagesText, setImagesText] = useState(
     (initial?.images ?? []).join("\n")
   );
@@ -75,7 +75,7 @@ export function ProductForm({ initial }: { initial?: Initial }) {
           isFeatured,
           isMonthlyOffer,
           badge: badgeRaw || null,
-          isActive,
+          active,
         };
         const url = initial?.id
           ? `/api/admin/products/${initial.id}`
@@ -215,7 +215,7 @@ export function ProductForm({ initial }: { initial?: Initial }) {
             hint="Pojavljuje se u sekciji 'Ponuda meseca' iznad proizvoda u prodavnici (preporuka: 3 po kategoriji)."
           />
           <Toggle
-            checked={isActive}
+            checked={active}
             onChange={setIsActive}
             label="Aktivan u prodavnici"
           />

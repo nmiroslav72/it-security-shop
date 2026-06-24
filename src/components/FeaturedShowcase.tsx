@@ -7,7 +7,7 @@ import { HomeCategorySidebar } from "./HomeCategorySidebar";
 export async function FeaturedShowcase() {
   const products = await prisma.product
     .findMany({
-      where: { isFeatured: true, isActive: true },
+      where: { isFeatured: true, active: true },
       orderBy: { createdAt: "desc" },
       take: 16,
     })

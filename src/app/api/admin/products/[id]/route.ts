@@ -21,7 +21,7 @@ const schema = z.object({
   isFeatured: z.boolean().default(false),
   isMonthlyOffer: z.boolean().default(false),
   badge: z.string().nullable().optional(),
-  isActive: z.boolean().default(true),
+  active: z.boolean().default(true),
 });
 
 async function requireAdmin() {

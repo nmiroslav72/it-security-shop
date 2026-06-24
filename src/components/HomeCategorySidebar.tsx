@@ -72,7 +72,7 @@ export async function HomeCategorySidebar() {
   const counts = await prisma.product
     .groupBy({
       by: ["category"],
-      where: { isActive: true },
+      where: { active: true },
       _count: { _all: true },
     })
     .catch(() => []);

@@ -41,7 +41,7 @@ export async function MonthlyOffers({ category }: { category: string }) {
   const offers = await prisma.product
     .findMany({
       where: {
-        isActive: true,
+        active: true,
         isMonthlyOffer: true,
         category: dbCategory,
       },
