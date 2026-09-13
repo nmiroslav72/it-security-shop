@@ -14,11 +14,18 @@ import { Footer }      from "@/components/layout/Footer";
 const inter = Inter({ subsets: ["latin-ext"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.diskontvideonadzora.rs"),
   title: "IT Security — Sigurnosne kamere, alarmi, interfoni",
   description:
     "Prodaja i montaza sigurnosnih sistema od 2008. IP kamere, alarmni sistemi, video interfoni.",
+  openGraph: {
+    type: "website",
+    locale: "sr_RS",
+    siteName: "IT Security",
+    url: "https://www.diskontvideonadzora.rs",
+    images: ["/og-default.jpg"],
+  },
 };
-
 export default function RootLayout({
   children,
 }: {
