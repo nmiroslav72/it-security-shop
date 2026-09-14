@@ -23,30 +23,27 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.9,
     },
     {
-      url: `${base}/shop?kategorija=kamere`,
-      lastModified: now,
-      changeFrequency: "daily",
-      priority: 0.85,
-    },
-    {
-      url: `${base}/shop?kategorija=alarmi`,
-      lastModified: now,
-      changeFrequency: "daily",
-      priority: 0.85,
-    },
-    {
-      url: `${base}/shop?kategorija=interfoni`,
-      lastModified: now,
-      changeFrequency: "daily",
-      priority: 0.85,
-    },
-    {
       url: `${base}/contact`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.6,
     },
   ];
+
+  let categoryRoutes: MetadataRoute.Sitemap = [];
+  try {
+    const categories = await prisma.category.findMany({
+      select: { slug: true },
+    });
+    categoryRoutes = categories.map((c) => ({
+      url: `${base}/shop?category=${c.slug}`,
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 0.85,
+    }));
+  } catch {
+    // Baza nije dostupna pri buildu
+  }
 
   let productRoutes: MetadataRoute.Sitemap = [];
   try {
@@ -60,6 +57,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly",
       priority: 0.7,
     }));
+  } catch {
+    // Baza nije dostupna pri buildu
+  }
+
+  return [...staticRoutes, ...categoryRoutes, ...productRoutes];
+}
   } catch {
     // Baza nije dostupna pri buildu — vraćamo statičke rute
   }
