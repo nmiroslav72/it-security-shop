@@ -20,7 +20,7 @@ OBAVEZE POTROSACA:
 REKLAMACIJA:
 Prodavac je duzan da u roku od 8 dana od dana prijema reklamacije odgovori potrosacu. Rok za resavanje reklamacije ne moze biti duzi od 30 dana za tehnicku robu.
 
-Prijavu reklamacija mozete uputiti na: nmiroslav72@yahoo.com ili pozivom na 063/224651.
+Prijavu reklamacija mozete uputiti na:diskontvideonadzora@diskontvideonadzora.rs ili pozivom na 063/224651.
 Radno vreme internet prodavnice: 0-24h`;
 
 export default function CheckoutPage() {
