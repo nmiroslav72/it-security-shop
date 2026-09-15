@@ -63,9 +63,4 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [...staticRoutes, ...categoryRoutes, ...productRoutes];
 }
-  } catch {
-    // Baza nije dostupna pri buildu — vraćamo statičke rute
-  }
-
-  return [...staticRoutes, ...productRoutes];
-}
+  
