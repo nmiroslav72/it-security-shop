@@ -41,7 +41,7 @@ export default function Page() {
         <div className="sp-item">
           <span className="sp-icon">✉️</span>
           <h2>Email podrska</h2>
-          <p>Pisana pitanja i zahteve posaljite na nmiroslav72@yahoo.com, odgovaramo u roku od 24h.</p>
+          <p>Pisana pitanja i zahteve posaljite na diskontvideonadzora@diskontvideonadzora.rs, odgovaramo u roku od 24h.</p>
         </div>
       </div>
 
