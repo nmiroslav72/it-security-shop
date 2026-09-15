@@ -171,7 +171,7 @@ export default function InterfoniZaZgradePage() {
         <p>Dolazimo KOD VAS na adresu sa kompletnom opremom — uzivo vidite sve prednosti sistema pre bilo kakve odluke. Sigurni smo da cemo zajedno naci pravo resenje za vasu zgradu.</p>
         <div className="iz-cta__btns">
           <a href="tel:063224651" className="iz-btn iz-btn--yellow">📞 063224651 — Miroslav</a>
-          <a href="mailto:nmiroslav72@yahoo.com" className="iz-btn iz-btn--outline-dark">✉️ nmiroslav72@yahoo.com</a>
+          <a href="mailto:diskontvideonadzora@diskontvideonadzora.rs" className="iz-btn iz-btn--outline-dark">✉️ diskontvideonadzora@diskontvideonadzora.rs</a>
         </div>
       </div>
 
