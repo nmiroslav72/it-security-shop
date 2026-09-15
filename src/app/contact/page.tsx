@@ -34,7 +34,7 @@ export default function ContactPage() {
             <span className="contact-card__icon">✉️</span>
             <div>
               <h2 className="contact-card__title">Email</h2>
-              <a href="mailto:nmiroslav72@yahoo.com" className="contact-link">nmiroslav72@yahoo.com</a>
+              <a href="mailto:diskontvideonadzora@diskontvideonadzora.rs" className="contact-link">diskontvideonadzora@diskontvideonadzora.rs</a>
             </div>
           </div>
 
