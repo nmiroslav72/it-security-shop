@@ -46,7 +46,7 @@ export default function Page() {
       </div>
 
       <div className="sp-note">
-        <p>Za povrat robe kontaktirajte nas na <strong>063224651</strong> ili emailom na <strong>nmiroslav72@yahoo.com</strong>.</p>
+        <p>Za povrat robe kontaktirajte nas na <strong>063224651</strong> ili emailom na <strong>diskontvideonadzora@diskontvideonadzora.rs</strong>.</p>
       </div>
 
       <style>{`
