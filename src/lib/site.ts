@@ -13,7 +13,7 @@ export const SITE = {
   phoneDisplay: "+381 63 224 651",
   phoneE164: "+38163224651",
 
-  email: "nmiroslav72@yahoo.com",
+  email: "diskontvideonadzora@diskontvideonadzora.rs",
 
   address: {
     street: "109 Nova 18",
