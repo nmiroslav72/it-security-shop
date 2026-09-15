@@ -74,9 +74,9 @@ export function Footer() {
         <div className="site-footer__col">
           <h4 className="site-footer__col-title">Kontakt</h4>
           <ul className="site-footer__contact">
-            <li><a href="tel:+381112345678">011 234 5678</a></li>
-            <li><a href="mailto:info@itsecurity.rs">info@itsecurity.rs</a></li>
-            <li>Beograd, Srbija</li>
+                       <li><a href="tel:+381632246510">063 224 651</a></li>
+            <li><a href="mailto:diskontvideonadzora@diskontvideonadzora.rs">diskontvideonadzora@diskontvideonadzora.rs</a></li>
+            <li>109. nova 18, 11060 Beograd (Palilula)</li>
             <li className="site-footer__hours">Pon-Pet: 09-17h</li>
           </ul>
         </div>
