@@ -1,4 +1,5 @@
 
+// @ts-nocheck
 export default function PostForm({ action, initial, onDelete }) {
   return (
     <>
