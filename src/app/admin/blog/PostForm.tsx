@@ -1,5 +1,6 @@
-
 // @ts-nocheck
+import CoverUpload from "@/components/blog/CoverUpload";
+
 export default function PostForm({ action, initial, onDelete }) {
   return (
     <>
@@ -13,8 +14,8 @@ export default function PostForm({ action, initial, onDelete }) {
         <label className="bf__l">Kratak opis (excerpt)
           <textarea name="excerpt" rows={2} defaultValue={initial?.excerpt ?? ""} />
         </label>
-        <label className="bf__l">Naslovna slika (URL)
-          <input name="coverImage" defaultValue={initial?.coverImage ?? ""} placeholder="/uploads/... ili https://..." />
+        <label className="bf__l">Naslovna slika
+          <CoverUpload initial={initial?.coverImage ?? ""} />
         </label>
         <label className="bf__l">Tekst (HTML)
           <textarea name="content" rows={16} defaultValue={initial?.content ?? ""} />
