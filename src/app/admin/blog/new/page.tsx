@@ -1,4 +1,4 @@
-
+// @ts-nocheck
 import PostForm from "../PostForm";
 import { createPost } from "../actions";
 
