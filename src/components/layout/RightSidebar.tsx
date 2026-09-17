@@ -1,38 +1,34 @@
 // @ts-nocheck
 import Link from "next/link";
+import { prisma } from "@/lib/prisma";
 
-const BLOG_POSTS = [
-  {
-    slug: "video-nadzor-preko-mobilnog-telefona",
-    title: "Video nadzor preko mobilnog telefona",
-    date: "10. maj 2025.",
-    category: "Saveti",
-    catClass: "saveti",
-  },
-  {
-    slug: "kamere-visoke-rezolucije-prednosti",
-    title: "Prednosti kamera visoke rezolucije 4K, 5MP, 4MP",
-    date: "28. apr 2025.",
-    category: "Saveti",
-    catClass: "saveti",
-  },
-  {
-    slug: "kako-izabrati-video-nadzor",
-    title: "Kako izabrati video nadzor — vodic za kupovinu",
-    date: "15. apr 2025.",
-    category: "Saveti",
-    catClass: "saveti",
-  },
-  {
-    slug: "ajax-bezicni-alarm-broj-1-evropa",
-    title: "Ajax bezicni alarm — broj 1 u Evropi",
-    date: "2. apr 2025.",
-    category: "Novosti",
-    catClass: "novosti",
-  },
+const STATIC_POSTS = [
+  { slug: "video-nadzor-preko-mobilnog-telefona", title: "Video nadzor preko mobilnog telefona", date: "10. maj 2025.", category: "Saveti", catClass: "saveti" },
+  { slug: "kamere-visoke-rezolucije-prednosti", title: "Prednosti kamera visoke rezolucije 4K, 5MP, 4MP", date: "28. apr 2025.", category: "Saveti", catClass: "saveti" },
+  { slug: "kako-izabrati-video-nadzor", title: "Kako izabrati video nadzor — vodic za kupovinu", date: "15. apr 2025.", category: "Saveti", catClass: "saveti" },
+  { slug: "ajax-bezicni-alarm-broj-1-evropa", title: "Ajax bezicni alarm — broj 1 u Evropi", date: "2. apr 2025.", category: "Novosti", catClass: "novosti" },
 ];
 
-export function RightSidebar() {
+export async function RightSidebar() {
+  let dbPosts = [];
+  try {
+    const posts = await prisma.post.findMany({
+      where: { published: true },
+      orderBy: { publishedAt: "desc" },
+      take: 5,
+      select: { title: true, slug: true, publishedAt: true },
+    });
+    dbPosts = posts.map((p) => ({
+      slug: p.slug,
+      title: p.title,
+      date: p.publishedAt ? new Date(p.publishedAt).toLocaleDateString("sr-RS") : "",
+      category: "Saveti",
+      catClass: "saveti",
+    }));
+  } catch {}
+
+  const BLOG_POSTS = [...dbPosts, ...STATIC_POSTS].slice(0, 5);
+
   return (
     <aside className="rs">
       <div className="rs-header">
