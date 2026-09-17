@@ -60,7 +60,37 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   } catch {
     // Baza nije dostupna pri buildu
   }
+  const staticBlogSlugs = [
+    "video-nadzor-preko-mobilnog-telefona",
+    "kamere-visoke-rezolucije-prednosti",
+    "kako-izabrati-video-nadzor",
+    "ajax-bezicni-alarm-broj-1-evropa",
+  ];
+  const staticBlogRoutes: MetadataRoute.Sitemap = [
+    { url: `${base}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
+    ...staticBlogSlugs.map((slug) => ({
+      url: `${base}/blog/${slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
+  ];
 
+  let blogRoutes: MetadataRoute.Sitemap = [];
+  try {
+    const posts = await prisma.post.findMany({
+      where: { published: true },
+      select: { slug: true, updatedAt: true },
+    });
+    blogRoutes = posts.map((p) => ({
+      url: `${base}/blog/${p.slug}`,
+      lastModified: p.updatedAt,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    }));
+  } catch {
+    // Baza nije dostupna pri buildu
+  }
   return [...staticRoutes, ...categoryRoutes, ...productRoutes];
 }
   
