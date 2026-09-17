@@ -41,7 +41,7 @@ export default function RootLayout({
           <div className="body-row">
             <Suspense fallback={<div style={{width:220}}></div>}><LeftSidebar /></Suspense>
             <main className="center-col">{children}</main>
-            <RightSidebar />
+                      <Suspense fallback={<aside style={{width:280}}></aside>}><RightSidebar /></Suspense>
           </div>
           <FloatingButtons />
           <Footer />
