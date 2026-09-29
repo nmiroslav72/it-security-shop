@@ -417,9 +417,15 @@ interface ShopPageProps {
 export async function generateMetadata({ searchParams }: ShopPageProps) {
   const params = await searchParams;
   const meta = params.category ? META_DESCRIPTIONS[params.category] : null;
+  const canonicalPath = params.category
+    ? `/shop?category=${params.category}`
+    : "/shop";
   return {
     title: meta?.title ?? "Prodavnica - IT Security video nadzor Beograd",
     description: meta?.description ?? "Kamere za video nadzor, alarmi, interfoni. Prodaja i montaza u Beogradu. IT Security - iskustvo od 2008. Pozovite 063224651.",
+    alternates: {
+      canonical: canonicalPath,
+    },
   };
 }
 
