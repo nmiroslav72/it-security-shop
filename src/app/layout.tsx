@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "sr_RS",
     siteName: "IT Security",
-    url: "https://www.diskontvideonadzora.rs",
+    url: "https://diskontvideonadzora.rs",
     images: ["/og-default.jpg"],
   },
 };
