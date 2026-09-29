@@ -14,7 +14,7 @@ import { Footer }      from "@/components/layout/Footer";
 const inter = Inter({ subsets: ["latin-ext"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.diskontvideonadzora.rs"),
+    metadataBase: new URL("https://diskontvideonadzora.rs"),
   title: "IT Security — Sigurnosne kamere, alarmi, interfoni",
   description:
     "Prodaja i montaza sigurnosnih sistema od 2008. IP kamere, alarmni sistemi, video interfoni.",
