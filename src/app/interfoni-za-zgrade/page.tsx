@@ -98,13 +98,13 @@ export default function InterfoniZaZgradePage() {
         <div className="iz-devices">
           <div className="iz-device">
             <div className="iz-device__num">1</div>
-                        <img src="/interfon-spoljna-jedinica.jpg" alt="Spoljna jedinica IP video interfona sa 10 inča ekranom i tastaturom" className="iz-device__img" loading="lazy" />
+                                   <img src="/uploads/interfon-spoljna-jedinica.jpg" alt="Spoljna jedinica IP video interfona sa 10 inča ekranom i tastaturom" className="iz-device__img" loading="lazy" />
             <h3>Spoljna jedinica sa 10 ekranom</h3>
             <p>LCD ekran visoke rezolucije sa osetljivim dodirnim interfejsom. Intuitivni Touch Screen sa Smart Keypad-om sa pozadinskim osvetljenjem.</p>
           </div>
           <div className="iz-device">
             <div className="iz-device__num">2</div>
-                        <img src="/interfon-unutrasnji-monitor.jpg" alt="Unutrašnji WiFi touch monitor za stan" className="iz-device__img" loading="lazy" />
+                                  <img src="/uploads/interfon-unutrasnji-monitor.jpg" alt="Unutrašnji WiFi touch monitor za stan" className="iz-device__img" loading="lazy" />
             <h3>Unutrasnji monitor (WiFi)</h3>
             <p>Slim touch ekran za svaki stan. Upravljanje mobilnim telefonom, video monitoring u realnom vremenu, interkom komunikacija sa kristalno cistim zvukom.</p>
           </div>
