@@ -76,7 +76,7 @@ export function Footer() {
           <ul className="site-footer__contact">
                                <li><a href="tel:+38163224651">063 224 651</a></li>
             <li><a href="mailto:diskontvideonadzora@diskontvideonadzora.rs">diskontvideonadzora@diskontvideonadzora.rs</a></li>
-            <li>109. nova 18, 11060 Beograd (Palilula)</li>
+            <li>Sutjeska 7/50c, 11060 Beograd (Palilula)</li>
             <li className="site-footer__hours">Pon-Pet: 09-17h</li>
           </ul>
         </div>

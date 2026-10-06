@@ -10,6 +10,7 @@ import { LeftSidebar } from "@/components/layout/LeftSidebar";
 import { FloatingButtons } from "@/components/layout/FloatingButtons";
 import { RightSidebar } from "@/components/layout/RightSidebar";
 import { Footer }      from "@/components/layout/Footer";
+import { LocalBusinessJsonLd } from "@/components/LocalBusinessJsonLd";
 
 const inter = Inter({ subsets: ["latin-ext"] });
 
@@ -35,6 +36,7 @@ export default function RootLayout({
     <html lang="sr">
       <body className={inter.className}>
         <div className="site-shell">
+          <LocalBusinessJsonLd />
           <Header />
           <InfoBar />
           <PromoBar />
