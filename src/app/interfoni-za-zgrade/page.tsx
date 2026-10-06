@@ -108,9 +108,8 @@ export default function InterfoniZaZgradePage() {
             <h3>Unutrasnji monitor (WiFi)</h3>
             <p>Slim touch ekran za svaki stan. Upravljanje mobilnim telefonom, video monitoring u realnom vremenu, interkom komunikacija sa kristalno cistim zvukom.</p>
           </div>
-          <div className="iz-device">
+                    <div className="iz-device">
             <div className="iz-device__num">3</div>
-                    .iz-device__img { display: block; width: 100%; height: 260px; object-fit: contain; background: #f4f6fb; border-radius: 8px; padding: 10px; margin-bottom: 12px; }
             <h3>Mrezna oprema</h3>
             <p>PoE switch, interfonski prihvatnik, rek orman, napajanje — sve sto je potrebno za stabilan i pouzdan rad sistema.</p>
           </div>
@@ -232,6 +231,8 @@ export default function InterfoniZaZgradePage() {
         .iz-device { background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 12px; padding: 20px; }
         .iz-device__num { width: 36px; height: 36px; background: var(--brand); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px; margin-bottom: 10px; }
         .iz-device h3 { font-size: 14px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+                .iz-device h3 { font-size: 14px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+        .iz-device__img { display: block; width: 100%; height: 260px; object-fit: contain; background: #f4f6fb; border-radius: 8px; padding: 10px; margin-bottom: 12px; }
         .iz-device p { font-size: 13px; color: var(--ink-muted); line-height: 1.6; margin: 0; }
         .iz-pricing { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
                 .iz-offer { background: #fff1f1; border: 2px solid #dc2626; border-radius: 14px; padding: 22px 26px; margin-bottom: 20px; }
