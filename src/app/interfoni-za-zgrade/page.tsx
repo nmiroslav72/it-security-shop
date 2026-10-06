@@ -230,7 +230,7 @@ export default function InterfoniZaZgradePage() {
         .iz-devices { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
         .iz-device { background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 12px; padding: 20px; }
         .iz-device__num { width: 36px; height: 36px; background: var(--brand); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px; margin-bottom: 10px; }
-        .iz-device h3 { font-size: 14px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+      
                 .iz-device h3 { font-size: 14px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
         .iz-device__img { display: block; width: 100%; height: 260px; object-fit: contain; background: #f4f6fb; border-radius: 8px; padding: 10px; margin-bottom: 12px; }
         .iz-device p { font-size: 13px; color: var(--ink-muted); line-height: 1.6; margin: 0; }
