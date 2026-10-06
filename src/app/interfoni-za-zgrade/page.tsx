@@ -151,6 +151,19 @@ export default function InterfoniZaZgradePage() {
             <a href="tel:063224651" className="iz-btn iz-btn--primary iz-btn--full">Zatrazi ponudu</a>
           </div>
         </div>
+                <div className="iz-offer">
+          <p className="iz-offer__title">🎁 Dodatne opcije i posebni popusti</p>
+          <p className="iz-offer__text">
+            Imamo i treću opciju: <strong>vi kupujete opremu i radite montažu</strong>, a mi dolazimo, povezujemo i puštamo sistem u rad.
+          </p>
+          <p className="iz-offer__text">
+            Svim potencijalnim kupcima posle prezentacije odobravamo dodatni popust:
+            <strong> 10% na varijantu 1</strong> i <strong>15% na varijantu 2</strong>.
+          </p>
+          <p className="iz-offer__note">
+            Sve cene su prikazane sa PDV-om od 20%. Za firme u sistemu PDV-a neto iznos je manji za taj PDV.
+          </p>
+        </div>
         <div className="iz-warranty">
           <div className="iz-warranty__item"><span className="iz-warranty__num">3</span><span>godine garancije na monitore</span></div>
           <div className="iz-warranty__item"><span className="iz-warranty__num">2</span><span>godine garancije na spoljnu jedinicu</span></div>
@@ -218,6 +231,11 @@ export default function InterfoniZaZgradePage() {
         .iz-device h3 { font-size: 14px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
         .iz-device p { font-size: 13px; color: var(--ink-muted); line-height: 1.6; margin: 0; }
         .iz-pricing { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+                .iz-offer { background: #fff1f1; border: 2px solid #dc2626; border-radius: 14px; padding: 22px 26px; margin-bottom: 20px; }
+        .iz-offer__title { font-size: 20px; font-weight: 800; color: #dc2626; margin-bottom: 10px; }
+        .iz-offer__text { font-size: 17px; line-height: 1.6; color: #b91c1c; margin-bottom: 8px; }
+        .iz-offer__text strong { color: #991b1b; }
+        .iz-offer__note { font-size: 15px; font-weight: 600; color: #dc2626; margin-top: 6px; }
         .iz-price-card { background: #fff; border: 2px solid rgba(0,0,0,0.1); border-radius: 14px; padding: 24px; }
         .iz-price-card--featured { border-color: var(--brand); box-shadow: 0 4px 20px rgba(29,62,184,0.15); }
         .iz-price-card__badge { font-size: 12px; font-weight: 700; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 10px; }
