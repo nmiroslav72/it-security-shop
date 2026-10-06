@@ -32,6 +32,7 @@ const CATEGORY_TREE = [
     children: [
       { slug: "audio-interfoni", label: "Audio interfoni" },
       { slug: "video-interfoni", label: "Video interfoni" },
+      { slug: "interfoni-za-zgrade", label: "Interfoni za zgrade" },
     ],
   },
 ];
@@ -42,6 +43,7 @@ const REZOLUCIJE = ["2MPX", "4MPX", "5MPX", "6MPX", "8MPX"];
 // Kategorije koje imaju posebne SEO stranice
 const CATEGORY_HREFS: Record<string, string> = {
   "video-nadzor": "/shop/video-nadzor",
+  "interfoni-za-zgrade": "/interfoni-za-zgrade",
 };
 
 function getCategoryHref(slug: string) {
