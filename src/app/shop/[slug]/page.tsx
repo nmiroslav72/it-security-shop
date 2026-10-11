@@ -1,6 +1,7 @@
 // @ts-nocheck
 import { prisma } from "@/lib/prisma";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
+import { resolveProductSlug } from "@/lib/resolveProduct";
 import { AddToCartButton } from "@/components/shop/AddToCartButton";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -37,12 +38,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function ProductPage({ params }: Props) {
   const { slug } = await params;
 
-  const product = await prisma.product.findUnique({
-    where: { slug, active: true },
-    include: { category: true },
-  });
-
-  if (!product) notFound();
+  const { product, redirectTo } = await resolveProductSlug(slug);
+  if (redirectTo && redirectTo !== slug) permanentRedirect("/shop/" + redirectTo);
+  if (!product || !product.active) notFound();
 
   const attrs = product.attributes as Record<string, string>;
   const images = product.images ?? [];
