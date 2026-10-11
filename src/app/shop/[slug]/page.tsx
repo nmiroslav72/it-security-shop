@@ -22,6 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     `${product.name} - prodaja i ugradnja u Beogradu. ${product.brand ? product.brand + ". " : ""}Garancija 2 godine. Pozovite 063224651.`;
 
   return {
+    alternates: { canonical: "/shop/" + slug },
     title,
     description,
     openGraph: {
